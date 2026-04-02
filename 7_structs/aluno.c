@@ -8,7 +8,7 @@ typedef struct Endereco
 
 typedef struct aluno
 {
-    char* nome;
+    char nome[50];
     int idade;
     Endereco end;
 }Aluno;

@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 enum StatusPedido {
-    PENDENTE = 2,
-    PROCESSANDO = 1,
-    ENVIADO = 4,
-    ENTREGUE = 4
+    PENDENTE = 1,
+    PROCESSANDO,
+    ENVIADO,
+    ENTREGUE
 };
 
 int main() {

@@ -15,8 +15,8 @@ struct Pessoa {
     EstadoCivil estado;
 };
 
-const char* estadoParaTexto(EstadoCivil e) {
-    switch(e) {
+char* estadoParaTexto(EstadoCivil estado) {
+    switch(estado) {
         case SOLTEIRO: return "Solteiro";
         case CASADO: return "Casado";
         case DIVORCIADO: return "Divorciado";
@@ -36,7 +36,7 @@ int main() {
     printf("Nome: %s\n", p1.nome);
     printf("Idade: %d\n", p1.idade);
     printf("Estado civil (numero): %d\n", p1.estado);
-    printf("Estado civil (numero): %s\n", estadoParaTexto(p1.estado));
+    printf("Estado civil: %s\n", estadoParaTexto(p1.estado));
 
     return 0;
 }

@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+// struct aluno{
 enum DiaDaSemana {
-    DOMINGO,
-    SEGUNDA,
-    TERCA,
+    DOMINGO, //0
+    SEGUNDA, // 1
+    TERCA, // 2
     QUARTA,
     QUINTA,
     SEXTA,
@@ -11,7 +12,10 @@ enum DiaDaSemana {
 };
 
 int main() {
-    enum DiaDaSemana hoje = QUARTA;
-    printf("Hoje é o dia número: %d\n", hoje);
+    enum DiaDaSemana dia;
+    scanf("%d", &dia); // QUARTA <=> 3
+    if(dia == QUARTA || dia == SEGUNDA)
+        printf("Hoje tem aula de PIF\n");
+
     return 0;
 }
